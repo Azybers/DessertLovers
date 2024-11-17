@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Dreamland Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Dessert Dreamland Cafe Logo" />
+        </div>
+    <nav>
+        
+        <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#cart">Your Cart</a></li>
+
+      </ul>
+    </nav>
+</header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Dessert Dreamland Cafe</h1>
+            <p>Indulge in the best Filipino desserts!</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in traditional Filipino desserts, bringing the sweet taste of home to you.</p>
+        <div class="about-image">
+            <img src="Different kinds of desserts.jpeg" alt="Different Kinds of Desserts Image">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="product-list">
+            <!-- Product 1: Halo-Halo -->
+            <div class="product">
+                <img src="Halo-Halo.jpeg" alt="Halo-Halo">
+                <h3>Halo-Halo</h3>
+                <p>Price: Php.100</p>
+                <button class="add-to-cart" data-product="Halo-Halo" data-price="100">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 2: Leche Flan -->
+            <div class="product">
+                <img src="Leche Flan.jpeg" alt="Leche Flan">
+                <h3>Leche Flan</h3>
+                <p>Price: Php.30</p>
+                <button class="add-to-cart" data-product="Leche Flan" data-price="30">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 3: Biko -->
+            <div class="product">
+                <img src="Biko.jpeg" alt="Biko">
+                <h3>Biko</h3>
+                <p>Price: Php.15</p>
+                <button class="add-to-cart" data-product="Biko" data-price="15">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 4: Ube Espasol -->
+            <div class="product">
+                <img src="Ube Espasol.jpeg" alt="Ube Espasol">
+                <h3>Ube Espasol</h3>
+                <p>Price: Php.20</p>
+                <button class="add-to-cart" data-product="Ube Espasol" data-price="20">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 5: Ube Halaya -->
+            <div class="product">
+                <img src="Ube Halaya.jpeg" alt="Ube Halaya">
+                <h3>Ube Halaya</h3>
+                <p>Price: Php.20</p>
+                <button class="add-to-cart" data-product="Ube Halaya" data-price="20">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 6: Puto -->
+            <div class="product">
+                <img src="Puto.jpeg" alt="Puto">
+                <h3>Puto</h3>
+                <p>Price: Php.10</p>
+                <button class="add-to-cart" data-product="Puto" data-price="10">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 7: Suman -->
+            <div class="product">
+                <img src="Suman.jpeg" alt="Suman">
+                <h3>Suman</h3>
+                <p>Price: Php.10</p>
+                <button class="add-to-cart" data-product="Suman" data-price="10">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 8: Palitaw -->
+            <div class="product">
+                <img src="Palitaw.jpeg" alt="Palitaw">
+                <h3>Palitaw</h3>
+                <p>Price: Php.10</p>
+                <button class="add-to-cart" data-product="Palitaw" data-price="10">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+
+            <!-- Product 9: Maja Blanca -->
+            <div class="product">
+                <img src="Maja Blanca.jpeg" alt="Maja Blanca">
+                <h3>Maja Blanca</h3>
+                <p>Price: Php.15</p>
+                <button class="add-to-cart" data-product="Maja Blanca" data-price="15">+ Add to Cart</button>
+                <input type="number" class="quantity" min="1" value="1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer custom orders, catering, and gift presents for all occasions!</p>
+        <div class="services-grid">
+            <div class="service">
+                <img src="Custom Orders.jpeg" alt="Custom Orders Image">
+                <h3>Custom Orders</h3>
+                <p>Create your own Filipino dessert masterpiece with our custom order service. We can tailor your favorite treats to your preferences.</p>
+            </div>
+            <div class="service">
+                <img src="Catering.jpeg" alt="Catering Image">
+                <h3>Catering</h3>
+                <p>Sweeten your events with our delicious Filipino dessert catering. We offer a variety of options to suit any occasion.</p>
+            </div>
+            <div class="service">
+                <img src="Gift Present.jpg" alt="Gift Present Image">
+                <h3>Gift Present</h3>
+                <p>Surprise your loved ones with our beautifully curated Filipino dessert gift present. They make a perfect present for any occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:dessertdreamlandcafe@gmail.com">dessertdreamlandcafe@gmail.com</a></p>
+        <p>Facebook: <a href="https://facebook.com/DessertDreamlandCafe">Dessert Dreamland Cafe</a></p>
+        <p>Phone: #-123-456-7890</p>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: Php.0.00</p>
+        <button id="checkout">Checkout</button>
+    <!-- Customer Information Form -->
+    <div id="customer-info">
+        <h3>Enter Your Information</h3>
+        <form id="checkout-form">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="name" required placeholder="Enter your full name">
+
+            <label for="customer-address">Address:</label>
+            <input type="text" id="customer-address" name="address" required placeholder="Enter your delivery address">
+
+            <label for="customer-contact">Contact Number:</label>
+            <input type="tel" id="customer-contact" name="contact" required placeholder="Enter your contact number">
+
+            <button type="submit" id="checkout">Checkout</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Thank You Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Thank you for adding to the cart!</p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dessert Dreamland Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<style>
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Hamburger icon styles */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+/* Navigation menu styles */
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-menu {
+    display: none;
+    width: 100%;
+    background-color: #333;
+  }
+  
+  .nav-menu.active {
+    display: block;
+  }
+  
+  .nav-menu ul {
+    display: block;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: Pink; /* Soft coral background */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px; /* Adjust logo size */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+header .hamburger {
+    display: none;
+}
+
+header .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(45deg, #ff7f50, #f0a500); 
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Section */
+#menu {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+#menu h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff7f50;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 10%;
+}
+
+.product {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.8em;
+    color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #f0a500;
+}
+
+.quantity {
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff7f50;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ff7f50;
+}
+
+.service p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #f0a500;
+}
+
+/* Cart Section */
+/* Customer Information Form Styles */
+#customer-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#customer-info h3 {
+    font-size: 1.8em;
+    color: #ff7f50;
+    margin-bottom: 15px;
+}
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#checkout-form label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#checkout-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#checkout-form button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-form button:hover {
+    background-color: #f0a500;
+}
+
+#cart {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#cart h2 {
+    font-size: 2.5em;
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#checkout {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#checkout:hover {
+    background-color: #f0a500;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.popup button:hover {
+    background-color: #f0a500;
+}
+</style>
+
+<script>
+
+// Select the elements
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+// Add event listener to toggle the 'active' class on the nav menu
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+
+// Cart array to hold added items
+let cartItems = [];
+
+// Function to update the cart display
+function updateCart() {
+    const cartList = document.getElementById('cart-items');
+    const totalPriceElement = document.getElementById('total-price');
+    
+    // Clear current cart display
+    cartList.innerHTML = '';
+
+    // Calculate the total price
+    let totalPrice = 0;
+
+    // Loop through the cart items to populate the cart list and calculate the total
+    cartItems.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} x${item.quantity} - Php${(item.price * item.quantity).toFixed(2)}`;
+        cartList.appendChild(listItem);
+        totalPrice += item.price * item.quantity;
+    });
+
+    // Update the total price display
+    totalPriceElement.textContent = `Total: Php${totalPrice.toFixed(2)}`;
+}
+
+// Function to handle adding items to the cart
+function addToCart(event) {
+    const productName = event.target.getAttribute('data-product');
+    const productPrice = parseFloat(event.target.getAttribute('data-price'));
+    
+    // Set a default quantity of 1
+    const quantity = 1;
+
+    // Check if the product is already in the cart
+    const existingItem = cartItems.find(item => item.name === productName);
+
+    if (existingItem) {
+        // If item is already in the cart, update the quantity
+        existingItem.quantity += quantity;
+    } else {
+        // Otherwise, add the new product to the cart
+        cartItems.push({
+            name: productName,
+            price: productPrice,
+            quantity: quantity
+        });
+    }
+
+    // Update the cart display and show the confirmation popup
+    updateCart();
+    showPopup();
+}
+
+// Function to show the "Thank You" popup
+function showPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'flex';
+
+    // Set timeout to close the popup after 3 seconds
+    setTimeout(() => {
+        closePopup();
+    }, 3000);
+}
+
+// Function to close the popup
+function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
+// Function to handle the checkout action
+function checkout() {
+    if (cartItems.length > 0) {
+        alert("Proceeding to checkout...");
+        // Additional checkout logic can go here (e.g., sending cart data to a server)
+    } else {
+        alert("Your cart is empty!");
+    }
+}// Function to handle the checkout action
+function checkout(event) {
+    event.preventDefault();  // Prevent form from submitting the default way
+
+    // Collect customer details
+    const customerName = document.getElementById('customer-name').value;
+    const customerAddress = document.getElementById('customer-address').value;
+    const customerContact = document.getElementById('customer-contact').value;
+
+    // Check if customer info is provided
+    if (!customerName || !customerAddress || !customerContact) {
+        alert("Please fill out all customer details.");
+        return;
+    }
+
+    // Display the customer details and cart information
+    let cartSummary = `Customer Information:\nName: ${customerName}\nAddress: ${customerAddress}\nContact: ${customerContact}\n\nCart Details:\n`;
+
+    let totalPrice = 0;
+    cartItems.forEach(item => {
+        cartSummary += `${item.name} x${item.quantity} - Php${(item.price * item.quantity).toFixed(2)}\n`;
+        totalPrice += item.price * item.quantity;
+    });
+
+    cartSummary += `\nTotal Price: Php${totalPrice.toFixed(2)}`;
+
+    // Show the order summary in a confirmation alert (could also be a popup or another page)
+    alert(cartSummary);
+
+    // Clear the cart after checkout
+    cartItems = [];
+    updateCart();
+}
+
+// Add event listener for the checkout form submission
+const checkoutForm = document.getElementById('checkout-form');
+if (checkoutForm) {
+    checkoutForm.addEventListener('submit', checkout);
+}
+
+
+// Add event listeners for the "Add to Cart" buttons
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', addToCart);
+});
+
+// Add event listener for the checkout button
+const checkoutButton = document.getElementById('checkout');
+if (checkoutButton) {
+    checkoutButton.addEventListener('click', checkout);
+}
+
+// Close popup when the "Close" button is clicked
+const closePopupButton = document.getElementById('close-popup');
+if (closePopupButton) {
+    closePopupButton.addEventListener('click', closePopup);
+}
+</script>
